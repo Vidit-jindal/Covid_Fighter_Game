@@ -13,3 +13,8 @@ function load_images(){
 
 function init(){
     //define the objects that we will have in the game
+
+    canvas=document.getElementById("mycanvas");
+    console.log(canvas);
+     W = 700;
+    H = 400;
