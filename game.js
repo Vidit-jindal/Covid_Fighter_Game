@@ -10,3 +10,6 @@ function load_images(){
     gem_image= new Image;
     gem_image.src="gem.jpeg";
 }
+
+function init(){
+    //define the objects that we will have in the game
