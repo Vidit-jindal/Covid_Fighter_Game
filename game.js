@@ -18,3 +18,9 @@ function init(){
     console.log(canvas);
      W = 700;
     H = 400;
+    
+     canvas.width = W ;
+    canvas.height = H ;
+    
+    game_over=false;
+    //create a context
