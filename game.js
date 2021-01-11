@@ -24,3 +24,6 @@ function init(){
     
     game_over=false;
     //create a context
+    
+     pen = canvas.getContext('2d');
+    console.log(pen);
