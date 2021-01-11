@@ -43,3 +43,11 @@ function init(){
         h: 60,
         speed:30
     };
+
+     e3={
+        x: 450,
+        y: 20,
+        w: 60,
+        h: 60,
+        speed:40
+    };
