@@ -27,3 +27,11 @@ function init(){
     
      pen = canvas.getContext('2d');
     console.log(pen);
+
+    e1={
+        x: 150,
+        y: 50,
+        w: 60,
+        h: 60,
+        speed:20
+    };
