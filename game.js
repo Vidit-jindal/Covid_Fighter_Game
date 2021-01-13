@@ -51,3 +51,16 @@ function init(){
         h: 60,
         speed:40
     };
+    
+    enemy=[e1,e2,e3];
+    
+    
+    player={
+        x:20,
+        y:H/2,
+        w:60,
+        h:60,
+        speed:20,
+        moving :false,
+        health: 100,
+    }
