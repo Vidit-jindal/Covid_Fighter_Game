@@ -64,3 +64,10 @@ function init(){
         moving :false,
         health: 100,
     }
+    
+    gem={
+        x:W-100,
+        y:H/2,
+        w:60,
+        h:60,
+    }
