@@ -71,3 +71,14 @@ function init(){
         w:60,
         h:60,
     }
+    
+    canvas.addEventListener('mousedown',function(){
+        console.log('mouse pressed');
+        player.moving=true;
+    });
+    
+    canvas.addEventListener('mouseup',function(){
+        console.log('mouse released');
+        player.moving=false;
+    });
+}
