@@ -106,3 +106,7 @@ function draw(){
     
     pen.drawImage(player_image,player.x,player.y,player.w,player.h);
     pen.drawImage(gem_image,gem.x,gem.y,gem.w,gem.h);
+
+     pen.fillStyle= "red";
+    //pen.fillRect(box.x,box.y,box.w,box.h);
+    //pen.drawImage(enemy_image,box.x,box.y,box.w,box.h);
