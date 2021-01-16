@@ -93,3 +93,9 @@ function isOverLap(rect1,rect2){
         }
         return false;
 }
+
+function draw(){
+    
+    //clear the canvas area for theold frame
+    
+    pen.clearRect(0,0,W,H);
