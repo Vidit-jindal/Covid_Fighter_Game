@@ -110,3 +110,12 @@ function draw(){
      pen.fillStyle= "red";
     //pen.fillRect(box.x,box.y,box.w,box.h);
     //pen.drawImage(enemy_image,box.x,box.y,box.w,box.h);
+
+     for(let i=0;i<enemy.length;i++)
+    {
+        pen.drawImage(enemy_image,enemy[i].x,enemy[i].y,enemy[i].w,enemy[i].h);
+    }
+    
+    pen.fillStyle="white";
+    pen.fillText("score"+player.health,10,10);
+}
