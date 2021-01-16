@@ -99,3 +99,10 @@ function draw(){
     //clear the canvas area for theold frame
     
     pen.clearRect(0,0,W,H);
+
+     //draw the player
+    
+    //draw the gem
+    
+    pen.drawImage(player_image,player.x,player.y,player.w,player.h);
+    pen.drawImage(gem_image,gem.x,gem.y,gem.w,gem.h);
