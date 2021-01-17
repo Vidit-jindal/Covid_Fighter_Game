@@ -119,3 +119,15 @@ function draw(){
     pen.fillStyle="white";
     pen.fillText("score"+player.health,10,10);
 }
+
+function update(){
+    
+    //overlap of player and gem
+    
+    if(isOverLap(player,gem))
+       {
+       console.log("you Won");
+           alert("you won");
+           game_over=true;
+           return;
+       }
