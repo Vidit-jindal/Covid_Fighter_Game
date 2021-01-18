@@ -131,3 +131,9 @@ function update(){
            game_over=true;
            return;
        }
+
+    //if the player is in moving state
+    if(player.moving == true){
+        player.x += player.speed;
+        player.health +=20;
+    }
