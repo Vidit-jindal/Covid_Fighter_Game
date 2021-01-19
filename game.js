@@ -137,3 +137,15 @@ function update(){
         player.x += player.speed;
         player.health +=20;
     }
+    
+    for (let i=0;i<enemy.length;i++)
+        {
+            if(isOverLap(enemy[i],player)){
+                player.health -=50;
+                if(player.health < 0){
+                    console.log(player.health);
+                    game_over = true;
+                    alert("game over" +player.health);
+                }
+            }
+        }
