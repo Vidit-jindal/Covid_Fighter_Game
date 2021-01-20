@@ -149,3 +149,16 @@ function update(){
                 }
             }
         }
+
+    //move the box downwards
+    //update each enemy by same logic
+    
+    for(let i=0; i<enemy.length ;i++){
+        enemy[i].y += enemy[i].speed;
+        if(enemy[i].y>H -enemy[i].h || enemy[i].y<0 )
+            {
+                enemy[i].speed *= -1;
+            }
+    }
+    
+}
