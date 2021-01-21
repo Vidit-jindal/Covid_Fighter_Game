@@ -162,3 +162,13 @@ function update(){
     }
     
 }
+
+function gameloop(){ 
+    if(game_over==true){
+        clearInterval(f);
+    }
+    draw();
+    update();
+    console.log("in the game loop");
+    
+}
