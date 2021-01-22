@@ -1,3 +1,5 @@
+
+
 function load_images(){
     //player,virus,gem
     
@@ -13,21 +15,21 @@ function load_images(){
 
 function init(){
     //define the objects that we will have in the game
-
+    
     canvas=document.getElementById("mycanvas");
     console.log(canvas);
      W = 700;
     H = 400;
     
-     canvas.width = W ;
+    canvas.width = W ;
     canvas.height = H ;
     
     game_over=false;
     //create a context
     
-     pen = canvas.getContext('2d');
+    pen = canvas.getContext('2d');
     console.log(pen);
-
+    
     e1={
         x: 150,
         y: 50,
@@ -35,7 +37,6 @@ function init(){
         h: 60,
         speed:20
     };
-
     e2={
         x: 300,
         y: 150,
@@ -43,8 +44,7 @@ function init(){
         h: 60,
         speed:30
     };
-
-     e3={
+    e3={
         x: 450,
         y: 20,
         w: 60,
@@ -83,6 +83,7 @@ function init(){
     });
 }
 
+
 function isOverLap(rect1,rect2){
     if(rect1.x < rect2.x +rect2.w &&
        rect1.x + rect1.w >rect2.x &&
@@ -99,19 +100,20 @@ function draw(){
     //clear the canvas area for theold frame
     
     pen.clearRect(0,0,W,H);
-
-     //draw the player
+    
+    
+    //draw the player
     
     //draw the gem
     
     pen.drawImage(player_image,player.x,player.y,player.w,player.h);
     pen.drawImage(gem_image,gem.x,gem.y,gem.w,gem.h);
-
-     pen.fillStyle= "red";
+    
+    pen.fillStyle= "red";
     //pen.fillRect(box.x,box.y,box.w,box.h);
     //pen.drawImage(enemy_image,box.x,box.y,box.w,box.h);
-
-     for(let i=0;i<enemy.length;i++)
+    
+    for(let i=0;i<enemy.length;i++)
     {
         pen.drawImage(enemy_image,enemy[i].x,enemy[i].y,enemy[i].w,enemy[i].h);
     }
@@ -131,7 +133,7 @@ function update(){
            game_over=true;
            return;
        }
-
+    
     //if the player is in moving state
     if(player.moving == true){
         player.x += player.speed;
@@ -149,7 +151,6 @@ function update(){
                 }
             }
         }
-
     //move the box downwards
     //update each enemy by same logic
     
@@ -172,3 +173,8 @@ function gameloop(){
     console.log("in the game loop");
     
 }
+
+load_images();
+init();
+
+var f = setInterval(gameloop,100);
